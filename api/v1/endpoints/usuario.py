@@ -110,6 +110,7 @@ async def delete_usuario(usuario_id: int, db: AsyncSession = Depends(get_session
                                 status_code=status.HTTP_404_NOT_FOUND)
 
 
+
 # POST Login
 @router.post('/login')
 async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: AsyncSession = Depends(get_session)):
